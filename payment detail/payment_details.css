@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+html{
+    height: 100%;
+    background-color:rgb(115, 146, 155) ;
+}
+
+body {
+    background-color: rgba(155, 128, 128, 0.1); 
+    font-size: 0.9em;
+    font-family:'Times New Roman', serif;
+    text-align: center;
+    color:black,rgb(222, 218, 216,);
+    width: 100%;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+  .title,.traveller-details,.button{
+    text-align: center;
+  }
+
+  .backgound-image{
+        background-image: url("bg.jpg" );
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+        background-origin: content-box, padding-box;
+        background-position: center;
+        object-fit: cover;
+
+    }
+    .info{
+      background-color: rgba(253, 244, 244, 0.8);
+      margin-top: 100px;
+      margin-bottom: 100px;
+      width: 60%;
+      margin-left: 250px;
+      margin-right: 250px;
+      padding:40px;
+      height: fit-content;
+     }
+       .title{
+        font-family: Georgia, serif;
+        font-size:2em;
+        padding-top:5px;
+        padding-bottom:15px;
+       }
+       .payment_method{
+        padding-bottom: 15px;
+        font-size: 1.3em;
+        text-align: left;
+        padding-left: 280px;
+       }
+       .payment_method:hover{
+        color:rgba(230, 137, 45, 0.902);
+        transform: scale(1,1) translateY(-13px);
+       }
+       
+       .payment-details{
+        padding-bottom: 15px;
+        font-size: 1.3em;
+        display:none;
+       }
+       .payment-details input{
+        width: 50%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 18px;
+        border: none ;
+        border-bottom: 2px solid white;
+        background: none;
+        outline: none;
+        color:rgb(207, 118, 40);
+       }
+       .payment-details:hover{ 
+        color:rgb(159, 118, 76);
+        transform: scale(1,1) translateY(-13px);
+       }
+.button{
+       height: 45px;
+       margin: 20px 0;
+     }
+     .button input{
+       height: 90%;
+       width: 40%;
+       border-radius: 5px;
+       border: none;
+       color: rgb(222, 218, 216);
+       font-size: 18px;
+       font-weight: 500;
+       letter-spacing: 1px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       background-color:rgb(203, 152, 102);
+       box-shadow: 0 9px #999;
+     }
+   .button input:hover{
+    background-color: rgb(224, 125, 38);
+    
+   }
+   .button :active{
+    box-shadow: 0 0px rgba(187, 185, 185, 0.37);
+    transform: translateY(4px);
+   }
+
+
+
+@media only screen and(min-width:481px){
+   body>header>nav.horizontal>ul{height: 160px;}
+}

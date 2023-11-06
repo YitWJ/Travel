@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 420px;
+    border-radius: 25px;
+    position: relative;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes move {
+    0%   {right:0px;}
+    25%  {right:200px;}
+    50%  {right:200px; }
+    75%  {right:0px;}
+    100% {right:0px;}
+  }
+
+.about-text {
+    width: 650px;
+    margin-left: 20px;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes mymove {
+    0%   {left:0px;}
+    25%  {left:200px;}
+    50%  {left:200px; }
+    75%  {left:0px;}
+    100% {left:0px;}
+  }
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: white;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: 'Crete Round', serif;
+}
+
+.about-text p {
+    color: rgba(245, 245, 245, 0.711);
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    font: normal 15px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a.button {
+    display: inline-block;
+    padding: 5px 15px;
+    background: white;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+a.button:hover {
+    color: white;
+    background-color: #c87e4f;
+}

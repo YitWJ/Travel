@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Detailst</title>
+    <link rel="stylesheet" href="pc_reset.css">
+    <link rel="stylesheet" href="tf_styles4.css">
+    <link rel="stylesheet" href="payment_details.css">
+    <link rel="stylesheet" href="/payment detail/index1.css">
+    <script type="text/javascript" src="payment_details.js" defer></script>
+</head>
+<header>
+    <div class="wrapper">
+      <h1>Discovery<span class="color">.</span></h1>
+      <nav>
+        <ul>
+          <li><a href="/home page/index.html">Home</a></li>
+          <li><a href="/About Malaysia/d_aboutmsia.html">About Malaysia</a></li>
+          <li><a href="/packages/ourPackages.html">Travel</a></li>
+          <li><a href="/cart/cart.html">Cart</a></li>
+          <li><a href="/Login_Register/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<body class="backgound-image">
+   <div class="info">
+    <div class="title">Payment Details</div>
+    <br>
+
+    <div class="payment_method">
+        <input name="paymentType" id="box" type="radio" onclick="openForm()"ondblclick="closeForm()" checked/>
+        <label for="box">Card</label>
+    </div> 
+
+    <div class="popup" id="form" name="popup" style="display: none;" onsubmit="return checkValid()">
+        <P style="font-size: medium;color: grey;">Double click button for close form</P>
+        <div class="payment-details"  style="display: block;" >
+            <label for="name">Cardholder Name</label>
+            <input type="text" name="name" id="name" placeholder="Please enter name same as the card"required /><br>
+        </div>
+
+        <div class="payment-details" style="display: block;">
+            <label for="card_number">Credit/Debit card number</label>
+            <input type="text" name="card_number" id="card_number" maxlength="19"placeholder="xxxx xxxx xxxx xxxx" required/>
+            <img src="visa_and_master_card_logo2.png" alt="visa_and_master_card_logo"width = 30% height = 50%>
+        </div>
+        <br>
+
+        <div class="payment-details" style="display: block;">
+            <label for="date">Expiration date</label>
+            <input type="date" name="date" id="date"/><br>
+        </div>
+
+        <div class="payment-details" style="display: block;">
+            <label for="CVC code">CVC code</label>
+            <input type="text" name="CVC code" id="CVC code" maxlength="3" placeholder="xxx" required/><br>
+        </div>
+        
+        <div class="payment-details" style="display: block;">
+            <label for="Country">Country</label>
+            <input type="text" name="myCountry" id="myInput" placeholder="Plaese enter your country name" required/><br>
+        </div>
+
+        <div class="payment-details" style="display: block;">
+            <label for="Zip Code">Zip Code</label>
+            <input type="text" name="Zip Code" maxlength="5" id="Zip Code" placeholder="xxxxx" required/><br>
+        </div>
+ </div>
+    
+    
+    <div  class="payment_method" >
+        <input name="paymentType" id="box" type="radio" checked/>
+        <label for="box">Online Payment</label>
+    </div>
+    <div  class="payment_method" >
+        <input name="paymentType" id="box" type="radio" checked/>
+        <label for="box">Google Pay</label>
+    </div>
+    <div  class="payment_method" >
+        <input name="paymentType" id="box" type="radio" checked onclick="openImage()" ondblclick="closeImage()"/>
+        <label for="box">E-wallet</label>
+        <div class="popout" id="myImage" style="display: none;">
+            <p style="font-size: medium;color: grey;margin-top: 20px;">Double click button for close form</P>
+        <img src="qrcode1.jpg" alt="qrcode" width = 50%  height= 65% >
+        </div>
+    </div>
+
+    <div class="button">
+        <a href="#">
+        <input type="submit" id="submit" value="Submit" onclick="alert('Pay Succesufullt')">
+        </a>
+        <input type="button" value="Cancel Payment" onclick="cancelpayment()" />
+
+    </div>
+   </div>
+   <footer>
+    <div class="wrapper">
+        <div id="footer-info">
+            <p>Copyright 2014 Discovery Travel Agency. All rights reserved.</p>
+            <p><a href="/T&P/tnp.html">Terms of Service & Privacy</a></p>
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li><h5>Company</h5></li>
+                <li><a href="/home page/index.html">Home</a></li>
+                <li><a href="/about us/about_us.html">About Us</a></li>
+                <li><a href="/faq/faq.html">FaQ</a></li>
+            </ul>
+            <ul>
+                <li><h5>Travel</h5></li>
+                <li><a href="/About Malaysia/d_aboutmsia.html">About Malaysia</a></li>
+                <li><a href="/packages/ourPackages.html">Travel Plan</a></li>
+                <li><a href="/cart/cart.html">Cart</a></li>
+            </ul>
+        </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>
